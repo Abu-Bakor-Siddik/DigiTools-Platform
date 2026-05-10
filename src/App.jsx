@@ -13,16 +13,17 @@ const fetchProduct = async() => {
 
 function App() {
   const productPromise = fetchProduct();
+  const [selectedProducts, setSelectedProducts] = useState([]);
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar selectedProducts={selectedProducts}></NavBar>
       <Banner></Banner>
       <ToastContainer></ToastContainer>
       <Suspense>
         <Stats></Stats>
       </Suspense>
       <Suspense>
-        <ProductSection productPromise={productPromise}></ProductSection>
+        <ProductSection productPromise={productPromise} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}></ProductSection>
       </Suspense>
     </>
   )

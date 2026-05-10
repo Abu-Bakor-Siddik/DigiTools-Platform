@@ -1,11 +1,11 @@
 import React, { use, useState } from "react";
 import AvailableProduct from "./AvailableProduct/AvailableProduct";
 import CartedProduct from "./CartedProduct/CartedProduct";
-const ProductSection = ({ productPromise }) => {
+const ProductSection = ({ productPromise,selectedProducts,setSelectedProducts }) => {
   const products = use(productPromise);
 
   const [selectedType, setSelectedType] = useState("product");
-  const [selectedProducts, setSelectedProducts] = useState([]);
+
 
   return (
     <div className="container mx-auto p-10">
@@ -25,7 +25,7 @@ const ProductSection = ({ productPromise }) => {
           <button
             onClick={() => setSelectedType("cart")}
             className={`btn btn-ghost text-[black] rounded-r-full ${selectedType === "cart" ? "bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-[white] rounded-full" : "bg-white"} `}>
-            Cart (2)
+            Cart ({selectedProducts.length})
           </button>
         </div>
       </div>
