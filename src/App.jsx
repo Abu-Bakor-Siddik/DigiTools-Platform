@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './components/Homepage/Banner/Banner'
 import NavBar from './components/NavBar/NavBar'
