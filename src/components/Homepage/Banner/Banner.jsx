@@ -14,8 +14,8 @@ const Banner = () => {
                         <div className="badge badge-soft badge-primary mb-4"> <BounceLoader size={12} color="#7e00fc"></BounceLoader> New: AI-Powered Tools Available</div>
 
                     </div>
-                <h1 className='text-5xl font-extrabold! mb-1'>Supercharge Your</h1>
-                <h1 className='text-5xl font-extrabold!'>Digital Workflow</h1>
+                <h1 className='md:text-5xl text-4xl font-extrabold! mb-1'>Supercharge Your</h1>
+                <h1 className='md:text-5xl text-4xl font-extrabold!'>Digital Workflow</h1>
                 <p className="py-6 text-[#627382] font-regular ">
                     Access premium AI tools, design assets, templates, and productivity <br />
                     software—all in one place. Start creating faster today. <br />

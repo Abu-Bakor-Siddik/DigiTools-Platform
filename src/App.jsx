@@ -11,7 +11,7 @@ const fetchProduct = async() => {
 }
 
 function App() {
- 
+  const productPromise = fetchProduct();
   return (
     <>
       <NavBar></NavBar>
@@ -20,7 +20,7 @@ function App() {
         <Stats></Stats>
       </Suspense>
       <Suspense>
-        <ProductSection></ProductSection>
+        <ProductSection productPromise={productPromise}></ProductSection>
       </Suspense>
     </>
   )

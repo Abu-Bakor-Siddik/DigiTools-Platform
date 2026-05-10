@@ -1,6 +1,8 @@
-import React from 'react';
-import Card from '../../Ui/Card';
-const ProductSection = () => {
+import React, { use } from 'react';
+import AvailableProduct from './AvailableProduct';
+const ProductSection = ({productPromise}) => {
+    console.log(productPromise);
+    const products = use(productPromise);
     return (
         <div className='container mx-auto p-10'>
             <div className='text-center space-y-6'>
@@ -11,8 +13,8 @@ const ProductSection = () => {
                     <button className='btn rounded-r-full'>Cart (2)</button>
                 </div>
             </div>
-            <div>
-                <Card></Card>
+            <div className='grid grid-cols-1 md:grid-cols-3'>
+                <AvailableProduct products={products} ></AvailableProduct>
             </div>
         </div>
     );
