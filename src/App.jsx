@@ -1,10 +1,11 @@
 
 import './App.css'
+import NavBar from './components/NavBar/NavBar'
 
 function App() {
   return (
     <>
-      <h2>Vite + React</h2>
+      <NavBar></NavBar>
     </>
   )
 }
