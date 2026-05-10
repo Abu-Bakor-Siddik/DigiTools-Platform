@@ -7,6 +7,7 @@ import ProductSection from './components/Homepage/ProductSection/ProductSection'
 import { ToastContainer } from 'react-toastify'
 import GetStarted from './components/Homepage/GetStarted/GetStarted'
 import Pricing from './components/Homepage/Pricing/Pricing'
+import TransformSection from './components/Homepage/TransformSection/TransformSection'
 
 const fetchProduct = async() => {
   const res = await fetch('/productData.json')
@@ -38,6 +39,7 @@ function App() {
           <Pricing></Pricing>
       </Suspense>
 
+      <TransformSection></TransformSection>
     </>
   )
 }

@@ -41,7 +41,7 @@ const PricingCard = () => {
 
             <div className="card w-96 bg-linear-to-r from-[#4f39f6] to-[#9514fa] shadow-sm rounded-3xl text-[white]">
                 <div className="card-body">
-                    <div className='flex justify-center relative -top-8'>
+                    <div className='flex justify-center relative -top-9'>
                         <span className="badge badge-soft bg-[#FEF3C6] rounded-full badge-lg badge-warning">Most Popular</span>
                     </div>
 
