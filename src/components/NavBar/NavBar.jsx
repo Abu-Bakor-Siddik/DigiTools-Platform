@@ -2,6 +2,10 @@ import React from 'react';
 import { MdOutlineMenu } from 'react-icons/md';
 
 const NavBar = ({selectedProducts}) => {
+    let totalCost = 0;
+    for(const product of selectedProducts){
+        totalCost = totalCost + product.price;
+    }
     return (
         <div className="navbar bg-base-100 shadow-sm flex justify-between items-center container mx-auto">
             <div className="dropdown">
@@ -41,11 +45,8 @@ const NavBar = ({selectedProducts}) => {
                         tabIndex="0"
                         className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
                         <div className="card-body">
-                        <span className="text-lg font-bold">8 Items</span>
-                        <span className="text-info">Subtotal: $999</span>
-                        <div className="card-actions">
-                            <button className="btn btn-primary btn-block">View cart</button>
-                        </div>
+                        <span className="text-lg font-bold">{selectedProducts.length} Items</span>
+                        <span className="text-info">Subtotal: ${totalCost}</span>
                         </div>
                     </div>
                     </div>

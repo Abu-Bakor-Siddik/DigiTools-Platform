@@ -17,14 +17,19 @@ function App() {
   return (
     <>
       <NavBar selectedProducts={selectedProducts}></NavBar>
+      
       <Banner></Banner>
+
       <ToastContainer></ToastContainer>
+
       <Suspense>
         <Stats></Stats>
       </Suspense>
+
       <Suspense>
         <ProductSection productPromise={productPromise} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}></ProductSection>
       </Suspense>
+
     </>
   )
 }
