@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/NavBar'
 import Stats from './components/Homepage/Banner/Stats'
 import ProductSection from './components/Homepage/ProductSection/ProductSection'
 import { ToastContainer } from 'react-toastify'
+import GetStarted from './components/Homepage/GetStarted/GetStarted'
 
 const fetchProduct = async() => {
   const res = await fetch('/productData.json')
@@ -17,7 +18,7 @@ function App() {
   return (
     <>
       <NavBar selectedProducts={selectedProducts}></NavBar>
-      
+
       <Banner></Banner>
 
       <ToastContainer></ToastContainer>
@@ -29,6 +30,8 @@ function App() {
       <Suspense>
         <ProductSection productPromise={productPromise} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts}></ProductSection>
       </Suspense>
+
+      <GetStarted></GetStarted>
 
     </>
   )

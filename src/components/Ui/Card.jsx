@@ -25,7 +25,7 @@ const Card = ({product,selectedProducts,setSelectedProducts}) => {
     }
 
     return (
-        <div className="card md:w-80 lg:w-96 bg-base-100 shadow-sm rounded-xl">
+        <div className="card md:w-80 lg:w-96 bg-base-100 shadow-sm rounded-xl hover-3d ">
             <div className="card-body">
                 <div className='flex justify-end'>                           
                     <span className={`badge badge-l font-bold! badge-soft ${badgeHandle(tagType)}`}>{tag}</span>

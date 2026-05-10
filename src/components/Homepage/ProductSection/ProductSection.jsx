@@ -18,13 +18,13 @@ const ProductSection = ({ productPromise,selectedProducts,setSelectedProducts })
         <div>
           <button
             onClick={() => setSelectedType("product")}
-            className={`btn btn-ghost text-[black] rounded-full ${selectedType === "product" ? "bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-[white] rounded-full" : "bg-white"} `}>
+            className={`btn btn-ghost text-[black] rounded-full hover-3d ${selectedType === "product" ? "bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-[white] rounded-full" : "bg-white"} `}>
             {" "}
             Products
           </button>
           <button
             onClick={() => setSelectedType("cart")}
-            className={`btn btn-ghost text-[black] rounded-full ${selectedType === "cart" ? "bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-[white] rounded-full" : "bg-white"} `}>
+            className={`btn btn-ghost text-[black] rounded-full hover-3d ${selectedType === "cart" ? "bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-[white] rounded-full" : "bg-white"} `}>
             Cart ({selectedProducts.length})
           </button>
         </div>
