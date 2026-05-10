@@ -1,0 +1,138 @@
+[
+  {
+    "id": "prod_001",
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with ATS-friendly templates and easy customization tools.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ Resume Templates",
+      "ATS Optimization",
+      "Export to PDF",
+      "Cover Letter Generator",
+      "Real-time Preview"
+    ],
+    "icon": "https://i.ibb.co.com/gF9pGYKd/File-Text.png"
+  },
+  {
+    "id": "prod_002",
+    "name": "Portfolio Website Kit",
+    "description": "Build a modern personal portfolio website without coding knowledge.",
+    "price": 49.99,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Responsive Design",
+      "Dark Mode Support",
+      "SEO Optimized",
+      "Custom Domain Support",
+      "Easy Deployment"
+    ],
+    "icon": "https://i.ibb.co.com/XxHQBdJD/Globe.png"
+  },
+  {
+    "id": "prod_003",
+    "name": "Fitness Tracker Plus",
+    "description": "Track workouts, calories, and fitness goals with smart analytics.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Workout Tracking",
+      "Calorie Counter",
+      "Progress Reports",
+      "Goal Setting",
+      "Health Insights"
+    ],
+    "icon": "https://i.ibb.co.com/XxrnVTLP/Dumbbell.png"
+  },
+  {
+    "id": "prod_004",
+    "name": "E-Learning Master",
+    "description": "Access premium online courses and learning materials from experts.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "500+ Video Courses",
+      "Downloadable Resources",
+      "Certificate of Completion",
+      "Live Classes",
+      "Community Access"
+    ],
+    "icon": "https://i.ibb.co.com/60BCxGqk/Graduation-Cap.png"
+  },
+  {
+    "id": "prod_005",
+    "name": "Cloud Storage Hub",
+    "description": "Secure cloud storage solution for personal and business files.",
+    "price": 5.99,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "1TB Storage",
+      "Automatic Backup",
+      "File Sharing",
+      "Cross-device Sync",
+      "Advanced Security"
+    ],
+    "icon": "https://i.ibb.co.com/gZSPQVCn/Cloud.png"
+  },
+  {
+    "id": "prod_006",
+    "name": "AI Content Writer",
+    "description": "Generate high-quality blogs, captions, and marketing content instantly.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "AI Blog Generator",
+      "Social Media Captions",
+      "SEO Suggestions",
+      "Multi-language Support",
+      "Fast Content Creation"
+    ],
+    "icon": "https://i.ibb.co.com/TDt9VcWm/Pen-Tool.png"
+  },
+  {
+    "id": "prod_007",
+    "name": "Business Analytics Suite",
+    "description": "Analyze business performance with advanced dashboards and reports.",
+    "price": 199.99,
+    "period": "yearly",
+    "tag": "Premium",
+    "tagType": "premium",
+    "features": [
+      "Custom Dashboards",
+      "Data Visualization",
+      "Export Reports",
+      "Team Collaboration",
+      "Real-time Analytics"
+    ],
+    "icon": "https://i.ibb.co.com/k2Smv6Qn/Bar-Chart.png"
+  },
+  {
+    "id": "prod_008",
+    "name": "Music Streaming Plus",
+    "description": "Enjoy ad-free music streaming with offline downloads and playlists.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited Streaming",
+      "Offline Downloads",
+      "High Quality Audio",
+      "Custom Playlists",
+      "No Advertisements"
+    ],
+    "icon": "https://i.ibb.co.com/fGpZWzcr/Music.png"
+  }
+]
