@@ -1,16 +1,21 @@
-# React + Vite
+Project Name : DigiTools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description : 
+DigiTools is a modern digital marketplace web application built with React and styled using Tailwind CSS and DaisyUI. It allows users to browse and purchase premium digital productivity tools through a clean, responsive interface.
 
-Currently, two official plugins are available:
+Tech Stack:
+1. React.js
+2. Tailwind CSS, DaisyUI, Google Font
+3. JavaScript (ES6+)
+4. React-Toastify (NPM Package)
+5. JSON (for product data)
+6. React-icons 
+7. Lucide 
+8. React-Spinner for dynamic animated icon
+9. imgbb for hosting Image 
+10. Vite as a build tool
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Features:
+1. Browse a collection of digital products with pricing, features, and tags (Popular, Best Seller, New, Premium)
+2. Add products to a cart with real-time cart count reflected in the navbar with total pricing
+3. Toggle between Products and Cart view within the same section and Toast notifications on cart actions
