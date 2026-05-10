@@ -1,8 +1,20 @@
 import React from 'react';
 import { Check } from 'lucide-react';
+import { toast } from 'react-toastify';
+
 
 
 const PricingCard = () => {
+    const pricingToaster = (pricingButton) => {
+        if(pricingButton === 'free'){
+            toast.success(`You have bought Free plan`)
+        }else if(pricingButton === 'premium'){
+            toast.success(`You have bought Premium plan`)
+        }else {
+            toast.success(`You have bought Enterprise plan`)
+        }
+    }
+
     return (
         <div className='gap-10 my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
             <div className="card w-96 bg-base-200 shadow-sm flex flex-col rounded-3xl">
@@ -34,7 +46,7 @@ const PricingCard = () => {
                         </li>
                     </ul>
                     <div className="mt-6">
-                        <button className="btn btn-primary font-bold! rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] w-full">Get Started Free</button>
+                        <button onClick={() => pricingToaster('free')} className="btn btn-primary font-bold! rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] w-full">Get Started Free</button>
                     </div>
                 </div>
             </div>
@@ -42,7 +54,7 @@ const PricingCard = () => {
             <div className="card w-96 bg-linear-to-r from-[#4f39f6] to-[#9514fa] shadow-sm rounded-3xl text-[white]">
                 <div className="card-body">
                     <div className='flex justify-center relative -top-9'>
-                        <span className="badge badge-soft bg-[#FEF3C6] rounded-full badge-lg badge-warning">Most Popular</span>
+                        <span className="badge badge-soft bg-[#FEF3C6] rounded-full  badge-lg badge-warning">Most Popular</span>
                     </div>
 
                     <div className='space-y-2'>
@@ -79,7 +91,7 @@ const PricingCard = () => {
                     </li>
                     </ul>
                     <div className="mt-10">
-                        <button className="btn  rounded-full  w-full "> <span className='font-bold! text-transparent bg-clip-text bg-linear-to-r from-[#4f39f6] to-[#9514fa]'>Start Pro Trial</span></button>
+                        <button onClick={() => pricingToaster('premium')} className="btn  rounded-full  w-full "> <span className='font-bold! text-transparent bg-clip-text bg-linear-to-r from-[#4f39f6] to-[#9514fa]'>Start Pro Trial</span></button>
                     </div>
                 </div>
             </div>
@@ -121,7 +133,7 @@ const PricingCard = () => {
                     </li>
                     </ul>
                     <div className="mt-10">
-                        <button className="btn btn-primary font-bold! rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] w-full">Contact Sales</button>
+                        <button onClick={() => pricingToaster('enterprise')} className="btn btn-primary font-bold! rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] w-full">Contact Sales</button>
                     </div>
                 </div>
             </div>

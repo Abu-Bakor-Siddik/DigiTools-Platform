@@ -8,6 +8,7 @@ import { ToastContainer } from 'react-toastify'
 import GetStarted from './components/Homepage/GetStarted/GetStarted'
 import Pricing from './components/Homepage/Pricing/Pricing'
 import TransformSection from './components/Homepage/TransformSection/TransformSection'
+import Footer from './components/Footer/Footer'
 
 const fetchProduct = async() => {
   const res = await fetch('/productData.json')
@@ -40,6 +41,9 @@ function App() {
       </Suspense>
 
       <TransformSection></TransformSection>
+
+      <Footer></Footer>
+
     </>
   )
 }
