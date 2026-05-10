@@ -2,8 +2,8 @@ import React from 'react';
 
 const GetStartedCard = () => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
-            <div className="card w-80 bg-base-100 shadow-sm hover-3d">
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 '>
+            <div className="card w-full  bg-base-100 shadow-sm hover-3d">
                 <div className="card-body space-y-3">
                     <div className='flex justify-end'>
                         <span className="badge badge-lg bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-[white] rounded-full">01</span>
@@ -17,7 +17,7 @@ const GetStartedCard = () => {
                     </div>
                 </div>
             </div>
-            <div className="card w-80 bg-base-100 shadow-sm hover-3d">
+            <div className="card w-full bg-base-100 shadow-sm hover-3d">
                 <div className="card-body space-y-3">
                     <div className='flex justify-end'>
                         <span className="badge badge-lg bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-[white] rounded-full">02</span>
@@ -31,7 +31,7 @@ const GetStartedCard = () => {
                     </div>
                 </div>
             </div>
-            <div className="card w-80 bg-base-100 shadow-sm hover-3d">
+            <div className="card w-full bg-base-100 shadow-sm hover-3d">
                 <div className="card-body space-y-3">
                     <div className='flex justify-end'>
                         <span className="badge badge-lg bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-[white] rounded-full">03</span>
