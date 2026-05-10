@@ -4,6 +4,7 @@ import Banner from './components/Homepage/Banner/Banner'
 import NavBar from './components/NavBar/NavBar'
 import Stats from './components/Homepage/Banner/Stats'
 import ProductSection from './components/Homepage/ProductSection/ProductSection'
+import { ToastContainer } from 'react-toastify'
 
 const fetchProduct = async() => {
   const res = await fetch('/productData.json')
@@ -16,6 +17,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <Banner></Banner>
+      <ToastContainer></ToastContainer>
       <Suspense>
         <Stats></Stats>
       </Suspense>
