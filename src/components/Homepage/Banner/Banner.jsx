@@ -22,7 +22,7 @@ const Banner = () => {
                     Explore Products
                 </p>
                 <div>
-                    <button className="btn btn-primary rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] mr-4">Explore Product</button>
+                    <button className="btn btn-primary rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] mr-4"> Explore Product</button>
                     <button className="btn btn-neutral btn-outline rounded-full border-[#9514fa]  "> <Play color='#9434f4'></Play> <span className='text-transparent bg-clip-text bg-linear-to-r from-[#4f39f6] to-[#9514fa] '>Outline</span></button>
                 </div>
                 </div>
