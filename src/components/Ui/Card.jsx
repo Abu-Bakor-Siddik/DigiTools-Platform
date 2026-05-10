@@ -2,17 +2,28 @@ import React from 'react';
 import CardFeature from './CardFeature';
 
 const Card = ({product}) => {
-    const{tag,icon,name,price,period,description,features}= product;
+
+    const{tag,tagType,icon,name,price,period,description,features}= product;
+    const badgeHandle = (tagType) => {
+    const badgeMap = {
+        'popular':     'badge-warning',
+        'best-seller': 'badge-success',
+        'new':         'badge-info',
+        'premium':     'badge-error',
+    };
+    return badgeMap[tagType] || 'badge-neutral';
+}
+
     return (
-        <div className="card w-96 bg-base-100 shadow-sm">
+        <div className="card md:w-80 lg:w-96 bg-base-100 shadow-sm rounded-xl">
             <div className="card-body">
                 <div className='flex justify-end'>                           
-                    <span className="badge badge-xs badge-warning ">{tag}</span>
+                    <span className={`badge badge-l font-bold! badge-soft ${badgeHandle(tagType)}`}>{tag}</span>
                 </div>
-                <img src={icon} alt={name} />
+                <img src={icon} alt={name} className='w-10 h-10' />
                 <h2 className="text-3xl font-bold">{name}</h2>
                 <p>{description}</p>
-                <span className="text-xl">${price}/{period}</span>
+                <span className="text-xl">${price}/ <span className='text-sm'>{period}</span></span>
                 {
                     features.map((feature,index) => <CardFeature key={index} feature={feature}></CardFeature>)
                 }

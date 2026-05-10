@@ -13,7 +13,7 @@ const ProductSection = ({productPromise}) => {
                     <button className='btn rounded-r-full'>Cart (2)</button>
                 </div>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-3'>
+            <div className='mt-10'>
                 <AvailableProduct products={products} ></AvailableProduct>
             </div>
         </div>
